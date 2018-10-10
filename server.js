@@ -31,7 +31,7 @@ app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, db) }
 app.put('/image', (req, res) => { image.handleImage(req, res,db) })
 
 
-app.listen(process.env.PORT ||, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
 	console.log(`All good Mr. Urena. Running on ${process.env.PORT}`);
 })
 
